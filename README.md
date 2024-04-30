@@ -1,4 +1,4 @@
-## DIARIO ALERTA
+## Diário Alerta
 O Diário Alerta é um aplicativo que 
 oferece a tranquilidade de monitorar 
 se o seu CPF ou CNPJ foi mencionado 
