@@ -15,7 +15,8 @@ export default function Home() {
         <div className="flex flex-row mx-96 items-center text-[#242D4C]">
           <div className="flex">
             <h3 className="text-center">
-              Fique Tranquilo e Sempre Receba Notificações no E-Mail sobre Citações de seu CPF ou CNPJ no Diário Oficial da União
+              Fique Tranquilo e Sempre Receba Notificações no E-Mail sobre
+              Citações de seu CPF ou CNPJ no Diário Oficial da União
             </h3>
           </div>
           <div className="w-[450px]">
@@ -30,6 +31,37 @@ export default function Home() {
           </div>
         </div>
         <a className="rounded-lg p-2 bg-[#FFBD59]">Monitore Agora!</a>
+        <div className="flex items-center justify-center border h-96 mt-10 rounded w-[962px]">
+          <form className="flex flex-col gap-2">
+          <input
+          name="Nome"
+          type="text"
+          id="nome"
+          required
+          placeholder="Nome"
+          className="w-42 border rounded-sm p-2"
+          />
+          <input
+          name="CPF"
+          type="text"
+          id="cpf"
+          required
+          placeholder="CPF"
+          className="w-42 border rounded-sm p-2"
+          />
+          <input
+          name="Email"
+          type="text"
+          id="email"
+          required
+          placeholder="Email"
+          className="w-42 border rounded-sm p-2"
+          />
+          <button className="">
+            <span>Enviar dados</span>
+          </button>
+          </form>
+        </div>
       </div>
     </div>
   );
