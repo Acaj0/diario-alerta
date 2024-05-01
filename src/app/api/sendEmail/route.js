@@ -9,7 +9,4 @@ export async function POST(request) {
     port: 587,
     secure: false,
   });
-
-
-  const mailOption
 }
