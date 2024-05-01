@@ -4,22 +4,22 @@ import NavBar from "@/components/NavBar";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 export default function Home() {
   return (
-    <div className="mx-96">
-      <div className="border mt-1 rounded-sm">
+    <div className="xl:mx-96">
+      <div className="border mt-1 rounded-sm ">
         <NavBar></NavBar>
       </div>
-      <div className="flex flex-col border rounded-sm mt-1 h-[650px] items-center pt-10">
-        <h1 className="font-medium text-2xl text-[#242D4C]">
+      <div className="flex flex-col border rounded-sm mt-1 md:h-[650px] items-center pt-10">
+        <h1 className="font-medium text-2xl text-center text-[#242D4C]">
           O Diário Alerta Mantém Você Informado!
         </h1>
-        <div className="flex flex-row mx-96 items-center text-[#242D4C]">
+        <div className="flex flex-row mx-10 md:mx-44 lg:mx-96 items-center text-[#242D4C] p-1">
           <div className="flex">
             <h3 className="text-center">
               Fique Tranquilo e Sempre Receba Notificações no E-Mail sobre
               Citações de seu CPF ou CNPJ no Diário Oficial da União
             </h3>
           </div>
-          <div className="w-[450px]">
+          <div className="w-fit lg:w-[450px]">
             <AspectRatio ratio={16 / 12}>
               <Image
                 src={"/email.png"}
@@ -30,9 +30,7 @@ export default function Home() {
             </AspectRatio>
           </div>
         </div>
-        <a className="rounded-lg p-2 bg-[#FFBD59]">Monitore Agora!</a>
-        <div className="flex items-center justify-center border h-96 mt-10 rounded w-[962px]">
-          <form className="flex flex-col gap-2">
+          <form className="flex flex-col gap-2 my-5">
           <input
           name="Nome"
           type="text"
@@ -42,11 +40,11 @@ export default function Home() {
           className="w-42 border rounded-sm p-2"
           />
           <input
-          name="CPF"
+          name="CPF/CNPJ"
           type="text"
           id="cpf"
           required
-          placeholder="CPF"
+          placeholder="CPF/CNPJ"
           className="w-42 border rounded-sm p-2"
           />
           <input
@@ -57,11 +55,10 @@ export default function Home() {
           placeholder="Email"
           className="w-42 border rounded-sm p-2"
           />
-          <button className="">
+          <button className="border p-1 bg-[#FFBD59] hover:text-white hover:bg-[#242D4C]">
             <span>Enviar dados</span>
           </button>
           </form>
-        </div>
       </div>
     </div>
   );
